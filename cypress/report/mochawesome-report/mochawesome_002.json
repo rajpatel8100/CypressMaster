@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-23T12:50:29.249Z",
+    "end": "2020-06-23T12:51:29.543Z",
+    "duration": 60294,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a8a85c2d-1b93-4bd6-ae66-b103730f753a",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SmokeTest.js",
+      "file": "cypress/integration/examples/SmokeTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62443e9d-a5b2-4d27-8f22-6db92411f886",
+          "title": "Smoke test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Item search!!",
+              "fullTitle": "Smoke test Item search!!",
+              "timedOut": null,
+              "duration": 48037,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage[\"default\"].visit();\n_HomePage[\"default\"].enterKeyWordToSearch(this.data.itemname);\n_HomePage[\"default\"].clickSearchButton();\n_ProductListPage[\"default\"].selectItemFromPLP();\n_ProductDetailsPage[\"default\"].clickAddToCartButtononPDP();",
+              "err": {},
+              "uuid": "65e9b6cf-dd5d-44df-948a-30148a58ac47",
+              "parentUUID": "62443e9d-a5b2-4d27-8f22-6db92411f886",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select your address",
+              "fullTitle": "Smoke test Select your address",
+              "timedOut": null,
+              "duration": 9337,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage[\"default\"].visit();\n_HomePage[\"default\"].clickYourAddressLink();\n_HomePage[\"default\"].clickDoneButtonToCloseSelectMyAddressModal();",
+              "err": {},
+              "uuid": "de603bdb-a45d-4e76-99cb-c388cf5f10d5",
+              "parentUUID": "62443e9d-a5b2-4d27-8f22-6db92411f886",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65e9b6cf-dd5d-44df-948a-30148a58ac47",
+            "de603bdb-a45d-4e76-99cb-c388cf5f10d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 57374,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

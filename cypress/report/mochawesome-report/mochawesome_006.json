@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T13:49:33.260Z",
+    "end": "2020-06-29T13:49:59.411Z",
+    "duration": 26151,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a00b833d-f68d-4382-89c0-3f61a4e3fa0b",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SanityTest.js",
+      "file": "cypress/integration/examples/SanityTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a02984af-38e9-43cb-a69c-4a6cfa68c097",
+          "title": "Sanity test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Item search!!",
+              "fullTitle": "Sanity test Item search!!",
+              "timedOut": null,
+              "duration": 18672,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage[\"default\"].visit();\n_HomePage[\"default\"].enterKeyWordToSearch(this.data.itemname);\n_HomePage[\"default\"].clickSearchButton();\n_ProductListPage[\"default\"].selectItemFromPLP();\n_ProductDetailsPage[\"default\"].clickAddToCartButtononPDP();",
+              "err": {},
+              "uuid": "ba78860a-59b2-4038-bbbf-016f186fe034",
+              "parentUUID": "a02984af-38e9-43cb-a69c-4a6cfa68c097",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select your address",
+              "fullTitle": "Sanity test Select your address",
+              "timedOut": null,
+              "duration": 5626,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage[\"default\"].visit();\n_HomePage[\"default\"].clickYourAddressLink();\n_HomePage[\"default\"].clickDoneButtonToCloseSelectMyAddressModal();",
+              "err": {},
+              "uuid": "e5af3633-6cd0-46ea-8f11-b57e5d7c745b",
+              "parentUUID": "a02984af-38e9-43cb-a69c-4a6cfa68c097",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba78860a-59b2-4038-bbbf-016f186fe034",
+            "e5af3633-6cd0-46ea-8f11-b57e5d7c745b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

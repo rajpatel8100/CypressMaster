@@ -1,0 +1,32 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "start": "./node_modules/.bin/http-server",
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "runtest": "npm run test -- --browser chrome",
+    "testwithreport": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000",
+    "runtestwithreport": "npm run testwithreport --",
+    "sanitytest": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000 --spec '/Users/CYPRESSAUTOMATION/cypress/integration/examples/SanityTest.js'",
+    "runsanitytest": "npm run sanitytest --",
+    "smoketest": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000 --spec '/Users/CYPRESSAUTOMATION/cypress/integration/examples/SmokeTest.js'",
+    "runsmoketest": "npm run smoketest --",
+    "regressiontest": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000 --spec '/Users/CYPRESSAUTOMATION/cypress/integration/examples/RegressionTest.js'",
+    "runregressiontest": "npm run regressiontest --"
+  },
+  "author": "Rajan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "cypress-xpath": "^1.6.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.0.1",
+    "mochawesome-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "cypress-wait-until": "^1.7.1"
+  }
+}

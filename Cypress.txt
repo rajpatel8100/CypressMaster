@@ -1,0 +1,17 @@
+Cypress commands :
+
+node_modules/.bin/cypress open    - to open cypress runner 
+./node_modules/.bin/cypress run    - to run the test in terminal headless
+node_modules/.bin/cypress run --record --key a5ec1bac-7cf5-4430-8785-0e049df5be65 -to view in dashboard
+
+node_modules/.bin/cypress run --reporter mochawesome 
+
+//"reporter": "mochawesome" 
+
+docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.2.0  --browser chrome -- to run cypress in docker image
+
+merge reports :
+npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress
+/report/output.json
+npx marge cypress/report/output.json --reportDir ./ --inline
+
