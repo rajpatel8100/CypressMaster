@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
+    "cy:run": "cypress run",
     "start": "./node_modules/.bin/http-server",
     "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
     "runtest": "npm run test -- --browser chrome",
@@ -15,7 +16,8 @@
     "smoketest": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000 --spec '/Users/CYPRESSAUTOMATION/cypress/integration/examples/SmokeTest.js'",
     "runsmoketest": "npm run smoketest --",
     "regressiontest": "node_modules\\.bin\\cypress run --reporter mochawesome --config pageLoadTimeout=100000 --spec '/Users/CYPRESSAUTOMATION/cypress/integration/examples/RegressionTest.js'",
-    "runregressiontest": "npm run regressiontest --"
+    "runregressiontest": "npm run regressiontest --",
+    "dashboardNoReports": "npm run cy:run -- --record --key a5ec1bac-7cf5-4430-8785-0e049df5be65 --parallel --config pageLoadTimeout=100000 --spec 'cypress/integration/Tests/Regression/**/*.js'"
   },
   "author": "Rajan",
   "license": "ISC",

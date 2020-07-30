@@ -1,7 +1,7 @@
 
-import HomePage from '../PageObjects/HomePage.js'
-import ProductListPage from '../PageObjects/ProductListPage.js'
-import ProductDetailsPage from '../PageObjects/ProductDetailsPage.js'
+import HomePage from '../../../PageObjects/HomePage.js'
+import ProductListPage from '../../../PageObjects/ProductListPage.js'
+import ProductDetailsPage from '../../../PageObjects/ProductDetailsPage.js'
 
 
 describe('Smoke test', () => {
